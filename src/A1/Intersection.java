@@ -3,7 +3,8 @@ package A1;
 import java.awt.Rectangle;
 
 /**
- * Compute the Intersection of 2 rectangles
+ * This class constructs two Rectangle objects, prints them, and then print the
+ * intersection. What if the intersection is empty? 
  */
 public class Intersection
 {
@@ -20,10 +21,11 @@ public class Intersection
         Rectangle r3 = r1.intersection(r2);
         System.out.println("Intersection: " + r3);
 
-        // Non-overlapping
+        // Non-overlapping Rectangle cases
         Rectangle r4 = new Rectangle(100, 100, 70, 50);
         System.out.println("r4 = " + r4);
 
+        // Output will have _negative width and height_
         Rectangle r5 = r1.intersection(r4);
         System.out.println("Intersection of r1 and r4 = " + r5);
     }
